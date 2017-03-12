@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Install: kevan14/asteroidscore/Installer.class
+OpenIDE-Module-Localizing-Bundle: kevan14/asteroidscore/Bundle.properties
+
