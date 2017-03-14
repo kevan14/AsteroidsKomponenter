@@ -29,12 +29,12 @@ public class EnemyPlugin implements IGamePluginService {
     @Override
     public void start(GameData gameData, World world) {
         enemy =(EnemyShip) createEnemyShip(gameData);
-        world.addEntity(enemy);
+        world.addEntity((Entity) enemy);
     }
 
     @Override
     public void stop(GameData gameData, World world) {
-        world.removeEntity(enemy);
+        world.removeEntity((Entity) enemy);
     }
     
 }

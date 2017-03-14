@@ -10,10 +10,7 @@
     
 </module>
 
-<module codenamebase="kevan14.AsteroidEnemy" distribution="AsteroidEnemy-1.0-SNAPSHOT.nbm" downloadsize="9073" license="AF77BD25" needsrestart="false" releasedate="2017/03/14" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.AsteroidEnemy" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170314" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, kevan14.AsteroidsCommon &gt; 1.0, org.openide.util.lookup &gt; 8.32.1, dk.sdu.kom16.group1.LibGDX &gt; 1.0.0, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1" OpenIDE-Module-Name="AsteroidEnemy" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
-    
-</module>
+
 
 
 <module codenamebase="kevan14.AsteroidPlayer" distribution="AsteroidPlayer-1.0-SNAPSHOT.nbm" downloadsize="8782" license="AF77BD25" needsrestart="false" releasedate="2017/03/14" targetcluster="asteroidsmodules">
