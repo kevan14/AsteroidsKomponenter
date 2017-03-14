@@ -11,7 +11,8 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import java.util.Collection;
-import java.util.ServiceLoader;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import kevan14.asteroidscommon.data.Entity;
 import kevan14.asteroidscommon.data.EntityType;
 import kevan14.asteroidscommon.data.GameData;
@@ -19,6 +20,8 @@ import kevan14.asteroidscommon.data.World;
 import kevan14.asteroidscommon.spi.IEntityProcessingService;
 import kevan14.asteroidscommon.spi.IGamePluginService;
 import org.openide.util.Lookup;
+import org.openide.util.LookupEvent;
+import org.openide.util.LookupListener;
 
 /**
  *
@@ -28,10 +31,10 @@ public class Game implements ApplicationListener {
 
     private static OrthographicCamera cam;
     private ShapeRenderer sr;
-    //private Collection<? extends IGamePluginService> gamePlugins;
-    private Collection<? extends IEntityProcessingService> entityProcessors;
+    private final Lookup lookup = Lookup.getDefault();
+    private List<IGamePluginService> gamePlugins = new CopyOnWriteArrayList<>();
+    private Lookup.Result<IGamePluginService> result; 
 
-    private ServiceLoader<IGamePluginService> gamePluginLoader;
 
     private final GameData gameData = new GameData();
     private World world = new World();
@@ -51,10 +54,14 @@ public class Game implements ApplicationListener {
                 new GameInputProcessor(gameData)
         );
 
-        entityProcessors = Lookup.getDefault().lookupAll(IEntityProcessingService.class);
-        gamePluginLoader = ServiceLoader.load(IGamePluginService.class);
-        for (IGamePluginService plugin : gamePluginLoader) {
+       
+        result = lookup.lookupResult(IGamePluginService.class);
+        result.addLookupListener(lookupListener);
+        result.allItems();
+        
+        for(IGamePluginService plugin : result.allInstances()) {
             plugin.start(gameData, world);
+            gamePlugins.add(plugin);
         }
 
 
@@ -87,7 +94,7 @@ public class Game implements ApplicationListener {
         }
 
         // cam.update();
-        for (IEntityProcessingService system : entityProcessors) {
+        for (IEntityProcessingService system : getEntityProcesses()) {
             system.process(gameData, world);
         }
     }
@@ -119,5 +126,34 @@ public class Game implements ApplicationListener {
     @Override
     public void dispose() {
     }
+    
+    private Collection<? extends IEntityProcessingService> getEntityProcesses() {
+        return lookup.lookupAll(IEntityProcessingService.class);
+    }
+    
+    
+    
+    private final LookupListener lookupListener = new LookupListener() {
+        @Override
+        public void resultChanged(LookupEvent le) {
+            
+            Collection<? extends IGamePluginService> updated = result.allInstances();
+            
+            for(IGamePluginService us : updated) {
+                //New installed modules
+                if(!gamePlugins.contains(us)){
+                    us.start(gameData, world);
+                }
+            }
+            
+            //Stop and remove modules
+            for(IGamePluginService gs : gamePlugins) {
+                if(!updated.contains(gs)) {
+                    gs.stop(gameData, world);
+                    gamePlugins.remove(gs);
+                }
+            }
+        }
+    };
 
 }

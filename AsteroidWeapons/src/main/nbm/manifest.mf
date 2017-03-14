@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
+OpenIDE-Module-Install: kevan14/asteroidweapons/Installer.class
 OpenIDE-Module-Localizing-Bundle: kevan14/asteroidweapons/Bundle.properties
 

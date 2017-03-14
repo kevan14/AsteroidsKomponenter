@@ -66,6 +66,7 @@
         <module>AsteroidEnemy</module>
         <module>AsteroidWeapons</module>
         <module>AsteroidAsteroids</module>
+        <module>SilentUpdate</module>
     </modules>
 
     <properties>

@@ -8,6 +8,7 @@ import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import org.openide.modules.ModuleInstall;
+import org.openide.util.Exceptions;
 
 public class Installer extends ModuleInstall {
 
@@ -22,6 +23,16 @@ public class Installer extends ModuleInstall {
         cfg.resizable = false;
 
         new LwjglApplication((ApplicationListener) new Game(), cfg);
+    }
+    
+    
+    @Override
+    public void uninstalled() {
+        try {
+            throw new Exception("Not allowed to remove Core module.");
+        } catch (Exception ex) {
+            Exceptions.printStackTrace(ex);
+        }
     }
 
 }
