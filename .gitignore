@@ -8,3 +8,8 @@
 /application/target/
 /AsteroidAsteroids/target/
 /SilentUpdate/target/
+/OSGiCollision/target/
+/AsteroidsCollision/target/
+/OSGiCollision/nbproject/private/
+/OSGiExtender/target/
+/OSGICollisionDS/target/

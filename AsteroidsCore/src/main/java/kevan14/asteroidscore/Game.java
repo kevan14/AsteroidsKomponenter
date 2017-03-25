@@ -143,8 +143,10 @@ public class Game implements ApplicationListener {
                 //New installed modules
                 if(!gamePlugins.contains(us)){
                     us.start(gameData, world);
+                    gamePlugins.add(us);
                 }
             }
+            
             
             //Stop and remove modules
             for(IGamePluginService gs : gamePlugins) {

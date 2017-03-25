@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="kevan14.osgicollisionds">
+<implementation class="kevan14.osgicollisionds.CollisionProcessor"/>
+<service<
+    <provide interface="kevan14.asteroidscommon.spi.IEntityProcessingService"/>
+</service> 
+</scr:component>

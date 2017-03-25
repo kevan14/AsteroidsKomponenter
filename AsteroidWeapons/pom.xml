@@ -31,20 +31,10 @@
             <version>${netbeans.version}</version>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidsCommon</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-util-lookup</artifactId>
             <version>RELEASE81</version>
             <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>dk.sdu.kom16.group1</groupId>
-            <artifactId>LibGDX</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.netbeans.api</groupId>
@@ -55,6 +45,11 @@
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-util-ui</artifactId>
             <version>RELEASE81</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidsCommon</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
     <properties>

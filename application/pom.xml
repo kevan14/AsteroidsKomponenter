@@ -20,9 +20,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidsModules-branding</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-core-netigso</artifactId>
+            <version>${netbeans.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-netbinox</artifactId>
+            <version>${netbeans.version}</version>
         </dependency>
         <!-- NbModuleSuite functional in RELEASE70 or later: -->
         <dependency>
@@ -45,16 +50,6 @@
             <version>RELEASE82</version>
         </dependency>
         <dependency>
-            <groupId>dk.sdu.kom16.group1</groupId>
-            <artifactId>LibGDX</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>SilentUpdate</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-netbeans-modules-autoupdate-services</artifactId>
             <version>RELEASE82</version>
@@ -63,6 +58,36 @@
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-io</artifactId>
             <version>RELEASE82</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidsCommon</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidsCore</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidPlayer</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidEnemy</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidWeapons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidAsteroids</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
