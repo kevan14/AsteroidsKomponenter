@@ -1,4 +1,3 @@
 Manifest-Version: 1.0
-OpenIDE-Module-Install: kevan14/osgiextender/Installer.class
 OpenIDE-Module-Localizing-Bundle: kevan14/osgiextender/Bundle.properties
 

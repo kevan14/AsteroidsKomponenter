@@ -8,11 +8,11 @@
   </parent>
 
     <groupId>kevan14</groupId>
-    <artifactId>OSGICollisionDS</artifactId>
+    <artifactId>OSGiBossContext</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
-    <name>OSGICollisionDS OSGi Bundle</name>
+    <name>OSGiBossContext OSGi Bundle</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,6 +25,11 @@
             <version>4.3.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>AsteroidsCommon</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -36,6 +41,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Bundle-Activator>kevan14.osgibosscontext.Activator</Bundle-Activator>
                         <Export-Package />
                     </instructions>
                 </configuration>

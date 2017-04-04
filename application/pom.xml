@@ -61,11 +61,6 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidsCommon</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
             <artifactId>AsteroidsCore</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -87,6 +82,11 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>AsteroidAsteroids</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>OSGiExtender</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

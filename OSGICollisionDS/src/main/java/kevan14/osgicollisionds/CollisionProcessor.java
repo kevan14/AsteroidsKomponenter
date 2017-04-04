@@ -5,18 +5,15 @@
  */
 package kevan14.osgicollisionds;
 
-import kevan14.asteroidscommon.data.GameData;
-import kevan14.asteroidscommon.data.World;
-import kevan14.asteroidscommon.spi.IEntityProcessingService;
 
 /**
  *
  * @author Kennet_Gamer
  */
-public class CollisionProcessor implements IEntityProcessingService{
+public class CollisionProcessor {
 
-    @Override
-    public void process(GameData gameData, World world) {
+   
+    public void process() {
         System.out.println("Collision running ...");
     }
     

@@ -67,6 +67,7 @@
         <module>SilentUpdate</module>
         <module>OSGiExtender</module>
     <module>OSGICollisionDS</module>
+    <module>OSGiBossContext</module>
   </modules>
 
     <properties>
