@@ -16,9 +16,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <useOSGiDependencies>true</useOSGiDependencies>
-                    <publicPackages>
-                        <publicPackage>kevan14.asteroidscore</publicPackage>
-                    </publicPackages>
+
                 </configuration>
             </plugin>
             <plugin>
@@ -48,6 +46,13 @@
             <version>RELEASE81</version>
         </dependency>
         <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-platform</artifactId>
+            <version>1.5.0</version>
+            <type>jar</type>
+            <classifier>natives-desktop</classifier>
+        </dependency>
+        <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-util-lookup</artifactId>
             <version>RELEASE81</version>
@@ -61,6 +66,30 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>AsteroidsCommon</artifactId>
             <version>${project.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.badlogicgames.gdx</groupId>
+                    <artifactId>gdx</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-backend-lwjgl</artifactId>
+            <version>1.5.0</version>
+            <type>jar</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.badlogicgames.gdx</groupId>
+                    <artifactId>gdx</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx</artifactId>
+            <version>1.5.0</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
     <properties>

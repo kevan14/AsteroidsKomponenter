@@ -17,7 +17,6 @@
                 <configuration>
                     <useOSGiDependencies>true</useOSGiDependencies>
                     <publicPackages>
-                        <publicPackage>com.badlogic.*</publicPackage>
                         <publicPackage>kevan14.asteroidscommon.data</publicPackage>
                         <publicPackage>kevan14.asteroidscommon.spi</publicPackage>
                     </publicPackages>
@@ -37,39 +36,7 @@
             <groupId>com.badlogicgames.gdx</groupId>
             <artifactId>gdx</artifactId>
             <version>1.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.badlogicgames.gdx</groupId>
-            <artifactId>gdx-platform</artifactId>
-            <version>1.5.0</version>
-            <classifier>natives-desktop</classifier>
-        </dependency>
-        <dependency>
-            <groupId>com.badlogicgames.gdx</groupId>
-            <artifactId>gdx-backend-lwjgl</artifactId>
-            <version>1.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.badlogicgames.gdx</groupId>
-            <artifactId>gdx-box2d</artifactId>
-            <version>1.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.badlogicgames.gdx</groupId>
-            <artifactId>gdx-box2d-platform</artifactId>
-            <version>1.5.0</version>
-            <classifier>natives-desktop</classifier>
-        </dependency>
-        <dependency>
-            <groupId>com.badlogicgames.gdx</groupId>
-            <artifactId>gdx-freetype</artifactId>
-            <version>1.5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.badlogicgames.gdx</groupId>
-            <artifactId>gdx-freetype-platform</artifactId>
-            <version>1.5.0</version>
-            <classifier>natives-desktop</classifier>
+            <type>jar</type>
         </dependency>
     </dependencies>
     <properties>
