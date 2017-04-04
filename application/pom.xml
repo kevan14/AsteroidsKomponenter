@@ -67,12 +67,12 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>OSGiExtender</artifactId>
+            <artifactId>AsteroidsCore</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidsCore</artifactId>
+            <artifactId>OSGiExtender</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

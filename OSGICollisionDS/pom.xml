@@ -35,6 +35,9 @@
                 <version>2.3.7</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <archive>
+                      <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+                    </archive>
                     <instructions>
                         <Export-Package />
                     </instructions>
