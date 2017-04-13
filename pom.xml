@@ -68,7 +68,7 @@
         <module>OSGiExtender</module>
     <module>OSGICollisionDS</module>
     <module>OSGiBossContext</module>
-  </modules>
+    </modules>
 
     <properties>
         <netbeans.version>RELEASE82</netbeans.version>

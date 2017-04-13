@@ -19,6 +19,7 @@
                     <publicPackages>
                         <publicPackage>kevan14.asteroidscommon.data</publicPackage>
                         <publicPackage>kevan14.asteroidscommon.spi</publicPackage>
+                        
                     </publicPackages>
                 </configuration>
             </plugin>
@@ -26,6 +27,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
+                    <publicPackages>com.baclogic.*</publicPackages>
                     <useDefaultManifestFile>true</useDefaultManifestFile>
                 </configuration>
             </plugin>
@@ -33,9 +35,14 @@
     </build>
     <dependencies>
         <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-api-annotations-common</artifactId>
+            <version>RELEASE82</version>
+        </dependency>
+        <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
             <artifactId>gdx</artifactId>
-            <version>1.5.0</version>
+            <version>1.9.2</version>
             <type>jar</type>
         </dependency>
     </dependencies>

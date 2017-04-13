@@ -7,6 +7,7 @@ package kevan14.asteroidweapons;
 
 import com.badlogic.gdx.math.MathUtils;
 import kevan14.asteroidscommon.data.Entity;
+import kevan14.asteroidscommon.data.EntityColor;
 import kevan14.asteroidscommon.data.EntityType;
 import static kevan14.asteroidscommon.data.EntityType.BULLET_PLAYER;
 import kevan14.asteroidscommon.data.Event;
@@ -32,7 +33,7 @@ public class WeaponProcessing implements IEntityProcessingService {
             //for every event mathing shoot event.
             for (Event event : entity.getEvents(PLAYER_SHOOT)) {
 
-                Entity newBullet = new Bullet();
+                Entity newBullet = new Entity();
 
                 newBullet.setPosition(entity.getX() + (10f * MathUtils.cos(entity.getRadians())), entity.getY() + (10f * MathUtils.sin(entity.getRadians())));
                 newBullet.setAcceleration(1000);
@@ -40,6 +41,8 @@ public class WeaponProcessing implements IEntityProcessingService {
                 newBullet.setDx(entity.getDx());
                 newBullet.setDy(entity.getDy());
                 newBullet.setType(BULLET_PLAYER);
+                newBullet.setColor(EntityColor.WHITE);
+                newBullet.setRadius(0.5f);
 
                 world.addEntity(newBullet);
 
@@ -47,7 +50,7 @@ public class WeaponProcessing implements IEntityProcessingService {
 
             for (Event event : entity.getEvents(ENEMY_SHOOT)) {
 
-                Entity newBullet = new Bullet();
+                Entity newBullet = new Entity();
 
                 newBullet.setPosition(entity.getX() + (10f * MathUtils.cos(entity.getRadians())), entity.getY() + (10f * MathUtils.sin(entity.getRadians())));
                 newBullet.setAcceleration(1000);
@@ -55,6 +58,7 @@ public class WeaponProcessing implements IEntityProcessingService {
                 newBullet.setDx(entity.getDx());
                 newBullet.setDy(entity.getDy());
                 newBullet.setType(EntityType.BULLET_ENEMY);
+                newBullet.setColor(EntityColor.WHITE);
                 newBullet.setRadius(0.5f);
 
                 world.addEntity(newBullet);

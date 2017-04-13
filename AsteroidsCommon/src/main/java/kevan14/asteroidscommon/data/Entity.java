@@ -5,6 +5,7 @@
  */
 package kevan14.asteroidscommon.data;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -18,10 +19,11 @@ import java.util.UUID;
  *
  * @author Kennet_Skole
  */
-public class Entity implements Serializable {
+public  class Entity implements Serializable {
 
     private final UUID ID = UUID.randomUUID();
     private EntityType type;
+    private EntityColor color;
     private float x;
     private float y;
     private float dx;
@@ -42,6 +44,15 @@ public class Entity implements Serializable {
     public void reduceExpiration(float delta) {
         this.expiration -= delta;
     }
+
+    public EntityColor getColor() {
+        return color;
+    }
+
+    public void setColor(EntityColor color) {
+        this.color = color;
+    }
+    
 
     public float getExpiration() {
         return expiration;
@@ -188,9 +199,7 @@ public class Entity implements Serializable {
         eventQueue.add( new Event(type, this.getID()) );
     }
     
-    public void render(ShapeRenderer sr) {
-        
-    }
+    
 
     public Queue<Event> getEvents(EventType type) {
         Queue<Event> queue = new PriorityQueue<>();

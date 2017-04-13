@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.MathUtils;
 import kevan14.asteroidscommon.data.Entity;
+import kevan14.asteroidscommon.data.EntityColor;
 import kevan14.asteroidscommon.data.EntityType;
 
 /**
@@ -26,6 +27,7 @@ public class Asteroid extends Entity {
         super.setX(x);
         super.setY(y);
         super.setType(type);
+        super.setColor(EntityColor.GREEN);
 
         numPoints = 8;
         width = 25;
@@ -46,15 +48,7 @@ public class Asteroid extends Entity {
 
     }
     
-    @Override
-    public void render(ShapeRenderer sr) {
-        sr.setColor(Color.GREEN);
-        sr.begin(ShapeRenderer.ShapeType.Line);
-        for(int i = 0, j = super.getShapeX().length -1; i< super.getShapeX().length; j = i++) {
-            sr.line(super.getShapeX()[i], super.getShapeY()[i], super.getShapeX()[j], super.getShapeY()[j]);
-        }
-        sr.end();
-    }
+   
 
     public int getNumPoints() {
         return numPoints;

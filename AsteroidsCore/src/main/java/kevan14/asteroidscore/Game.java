@@ -7,6 +7,7 @@ package kevan14.asteroidscore;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -14,6 +15,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import kevan14.asteroidscommon.data.Entity;
+import kevan14.asteroidscommon.data.EntityColor;
 import kevan14.asteroidscommon.data.EntityType;
 import kevan14.asteroidscommon.data.GameData;
 import kevan14.asteroidscommon.data.World;
@@ -33,8 +35,7 @@ public class Game implements ApplicationListener {
     private ShapeRenderer sr;
     private final Lookup lookup = Lookup.getDefault();
     private List<IGamePluginService> gamePlugins = new CopyOnWriteArrayList<>();
-    private Lookup.Result<IGamePluginService> result; 
-
+    private Lookup.Result<IGamePluginService> result;
 
     private final GameData gameData = new GameData();
     private World world = new World();
@@ -54,16 +55,14 @@ public class Game implements ApplicationListener {
                 new GameInputProcessor(gameData)
         );
 
-       
         result = lookup.lookupResult(IGamePluginService.class);
         result.addLookupListener(lookupListener);
         result.allItems();
-        
-        for(IGamePluginService plugin : result.allInstances()) {
+
+        for (IGamePluginService plugin : result.allInstances()) {
             plugin.start(gameData, world);
             gamePlugins.add(plugin);
         }
-
 
     }
 
@@ -105,8 +104,31 @@ public class Game implements ApplicationListener {
             float[] shapey = entity.getShapeY();
             if (shapex != null && shapey != null) {
 
-                // sr.setProjectionMatrix(cam.combined);
-                entity.render(sr);
+                Color c;
+
+                switch (entity.getColor()) {
+                    case RED:
+                        c = Color.RED;
+                        break;
+                    case BLUE:
+                        c = Color.BLUE;
+                        break;
+                    case GREEN:
+                        c = Color.GREEN;
+                        break;
+                    case YELLOW:
+                        c = Color.YELLOW;
+                        break;
+                    default:
+                        c = Color.WHITE;
+                        break;
+                }
+                sr.setColor(c);
+                sr.begin(ShapeRenderer.ShapeType.Line);
+                for (int i = 0, j = entity.getShapeX().length - 1; i < entity.getShapeX().length; j = i++) {
+                    sr.line(entity.getShapeX()[i], entity.getShapeY()[i], entity.getShapeX()[j], entity.getShapeY()[j]);
+                }
+                sr.end();
             }
         }
     }
@@ -126,31 +148,28 @@ public class Game implements ApplicationListener {
     @Override
     public void dispose() {
     }
-    
+
     private Collection<? extends IEntityProcessingService> getEntityProcesses() {
         return lookup.lookupAll(IEntityProcessingService.class);
     }
-    
-    
-    
+
     private final LookupListener lookupListener = new LookupListener() {
         @Override
         public void resultChanged(LookupEvent le) {
-            
+
             Collection<? extends IGamePluginService> updated = result.allInstances();
-            
-            for(IGamePluginService us : updated) {
+
+            for (IGamePluginService us : updated) {
                 //New installed modules
-                if(!gamePlugins.contains(us)){
+                if (!gamePlugins.contains(us)) {
                     us.start(gameData, world);
                     gamePlugins.add(us);
                 }
             }
-            
-            
+
             //Stop and remove modules
-            for(IGamePluginService gs : gamePlugins) {
-                if(!updated.contains(gs)) {
+            for (IGamePluginService gs : gamePlugins) {
+                if (!updated.contains(gs)) {
                     gs.stop(gameData, world);
                     gamePlugins.remove(gs);
                 }
