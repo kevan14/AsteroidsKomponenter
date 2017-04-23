@@ -27,7 +27,7 @@ public class CollisionProcessor implements IEntityProcessingService {
      */
     @Override
     public void process(GameData gameData, World world) {
-         System.out.println("Collision detection...");
+         System.out.println("Collision detection using Declarative Services");
          for(Entity ent : world.getEntities()) {
              source = ent;
              

@@ -45,12 +45,12 @@
     </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>OSGiBossContext</artifactId>
+            <artifactId>OSGICollisionDS</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>OSGICollisionDS</artifactId>
+            <artifactId>OSGiBossContext</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

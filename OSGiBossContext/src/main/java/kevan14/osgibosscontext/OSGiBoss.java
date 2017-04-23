@@ -17,7 +17,7 @@ public class OSGiBoss implements IEntityProcessingService {
 
     @Override
     public void process(GameData gameData, World world) {
-        System.out.println("Im a boss");
+        System.out.println("Im a boss processors using BundleContext");
     }
     
 }

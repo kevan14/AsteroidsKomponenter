@@ -30,6 +30,7 @@
             <version>${netbeans.version}</version>
         </dependency>
         <!-- NbModuleSuite functional in RELEASE70 or later: -->
+        
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-netbeans-modules-nbjunit</artifactId>
@@ -61,27 +62,12 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidsCore</artifactId>
+            <artifactId>SilentUpdate</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidPlayer</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidEnemy</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidAsteroids</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>AsteroidWeapons</artifactId>
+            <artifactId>AsteroidsCommon</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -99,6 +85,7 @@
 
             </plugin>
             <!-- Permits NbModuleSuite to be run in integration-test phase: -->
+           
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -110,6 +97,7 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
+           
         </plugins>
     </build>
 
