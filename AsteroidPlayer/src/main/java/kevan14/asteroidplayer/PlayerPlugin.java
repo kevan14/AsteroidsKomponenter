@@ -13,6 +13,7 @@ import kevan14.asteroidscommon.data.World;
 import kevan14.asteroidscommon.spi.IGamePluginService;
 import org.openide.util.lookup.ServiceProvider;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -59,6 +60,7 @@ public class PlayerPlugin implements IGamePluginService {
     @Override
     public void stop(GameData gameData, World world) {
         world.removeEntity((Entity) player);
+        ((ConfigurableApplicationContext)ctx).close();
     }
 
 }
