@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "playerShip" class = "kevan14.asteroidscommon.data.Entity">
+      
+       <property name = "type" value = "PLAYER"/>
+      <property name = "color" value = "BLUE"/>
+      <property name = "x" value = "50" />
+      <property name = "y" value = "50"/>
+      <property name = "dx" value = "0"/>
+      <property name = "dy" value = "0"/>
+      <property name = "radians" value = "1.57075"/>
+      <property name = "maxSpeed" value = "100"/>
+      <property name = "acceleration" value = "100"/>
+      <property name = "deacceleration" value = "10"/>
+      <property name = "rotationSpeed" value = "3"/>
+      <property name = "radius" value = "1.5"/>
+      
+       </bean>
+
+</beans>

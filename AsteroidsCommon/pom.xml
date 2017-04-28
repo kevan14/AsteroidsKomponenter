@@ -19,7 +19,7 @@
                     <publicPackages>
                         <publicPackage>kevan14.asteroidscommon.data</publicPackage>
                         <publicPackage>kevan14.asteroidscommon.spi</publicPackage>
-                        
+                        <publicPackage>kevan14.asteroidscommon.managers</publicPackage>
                     </publicPackages>
                 </configuration>
             </plugin>

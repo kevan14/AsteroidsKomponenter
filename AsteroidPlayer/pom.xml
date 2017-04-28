@@ -15,6 +15,15 @@
                 <artifactId>nbm-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <nbmResources>
+                        <nbmResource>
+                            <directory>src/main/resources</directory>
+                            <targetPath>modules/lib</targetPath>
+                            <includes>
+                                <include>beans.xml</include>
+                            </includes>
+                        </nbmResource>
+                    </nbmResources>
                     <useOSGiDependencies>true</useOSGiDependencies>
                 </configuration>
             </plugin>
@@ -22,9 +31,16 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
+                    <resources>
+                        <resource>
+                            <directory>src/main/resources</directory>
+                            <include>beans.xml</include>
+                        </resource>
+                    </resources>
                     <useDefaultManifestFile>true</useDefaultManifestFile>
                 </configuration>
             </plugin>
+            
         </plugins>
     </build>
     <dependencies>

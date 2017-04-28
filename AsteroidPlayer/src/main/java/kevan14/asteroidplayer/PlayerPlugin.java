@@ -30,8 +30,7 @@ public class PlayerPlugin implements IGamePluginService {
 
     @Override
     public void start(GameData gameData, World world) {
-        String[] contextPaths = new String[] {"kevan14/asteroidplayer/beans.xml"};
-        ctx = new ClassPathXmlApplicationContext(contextPaths);
+        ctx = new FileSystemXmlApplicationContext("/asteroidsmodules/modules/lib/beans.xml");
         
         player = (Entity) ctx.getBean("playerShip");
         System.out.println("Player instance created:" + player);
