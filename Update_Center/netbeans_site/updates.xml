@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!DOCTYPE module_updates PUBLIC "-//NetBeans//DTD Autoupdate Catalog 2.5//EN" "http://www.netbeans.org/dtds/autoupdate-catalog-2_5.dtd">
-<module_updates timestamp="32/11/10/23/04/2017">
+<module_updates timestamp="20/49/18/29/04/2017">
 
 
 
-<module codenamebase="kevan14.AsteroidAsteroids" distribution="AsteroidAsteroids-1.0-SNAPSHOT.nbm" downloadsize="1706648" license="AF77BD25" needsrestart="false" releasedate="2017/04/13" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.AsteroidAsteroids" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170413" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidAsteroids" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="kevan14.AsteroidAsteroids" distribution="AsteroidAsteroids-1.0-SNAPSHOT.nbm" downloadsize="1707533" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.AsteroidAsteroids" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidAsteroids" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
-<module codenamebase="kevan14.AsteroidEnemy" distribution="AsteroidEnemy-1.0-SNAPSHOT.nbm" downloadsize="1706207" license="AF77BD25" needsrestart="false" releasedate="2017/04/13" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.AsteroidEnemy" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170413" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidEnemy" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="kevan14.AsteroidEnemy" distribution="AsteroidEnemy-1.0-SNAPSHOT.nbm" downloadsize="1707103" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.AsteroidEnemy" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidEnemy" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
-<module codenamebase="kevan14.AsteroidPlayer" distribution="AsteroidPlayer-1.0-SNAPSHOT.nbm" downloadsize="1705929" license="AF77BD25" needsrestart="false" releasedate="2017/04/13" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.AsteroidPlayer" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170413" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidPlayer" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="kevan14.AsteroidPlayer" distribution="AsteroidPlayer-1.0-SNAPSHOT.nbm" downloadsize="4956882" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.AsteroidPlayer" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0, org.apache.commons.logging &gt; 1.2.0" OpenIDE-Module-Name="AsteroidPlayer" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
-<module codenamebase="kevan14.AsteroidsCommon" distribution="AsteroidsCommon-1.0-SNAPSHOT.nbm" downloadsize="1711316" license="AF77BD25" needsrestart="false" releasedate="2017/04/20" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.AsteroidsCommon" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170420" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1" OpenIDE-Module-Name="AsteroidsCommon" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="kevan14.AsteroidsCommon" distribution="AsteroidsCommon-1.0-SNAPSHOT.nbm" downloadsize="1713512" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.AsteroidsCommon" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1" OpenIDE-Module-Name="AsteroidsCommon" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
-<module codenamebase="kevan14.AsteroidsCore" distribution="AsteroidsCore-1.0-SNAPSHOT.nbm" downloadsize="5829674" license="AF77BD25" needsrestart="false" releasedate="2017/04/13" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.AsteroidsCore" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170413" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, org.openide.util.lookup &gt; 8.32.1, org.openide.util &gt; 9.7.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidsCore" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="kevan14.AsteroidsCore" distribution="AsteroidsCore-1.0-SNAPSHOT.nbm" downloadsize="5830673" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.AsteroidsCore" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, org.openide.util.lookup &gt; 8.32.1, org.openide.util &gt; 9.7.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidsCore" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
-<module codenamebase="kevan14.AsteroidWeapons" distribution="AsteroidWeapons-1.0-SNAPSHOT.nbm" downloadsize="1583252" license="AF77BD25" needsrestart="false" releasedate="2017/04/13" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.AsteroidWeapons" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170413" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidWeapons" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="kevan14.AsteroidWeapons" distribution="AsteroidWeapons-1.0-SNAPSHOT.nbm" downloadsize="1584062" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.AsteroidWeapons" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.util.lookup &gt; 8.32.1, org.openide.modules &gt; 7.47.1, org.openide.util.ui &gt; 9.4.1, kevan14.AsteroidsCommon &gt; 1.0" OpenIDE-Module-Name="AsteroidWeapons" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
@@ -95,8 +95,8 @@
     
 </module>
 
-<module codenamebase="kevan14.OSGiExtender" distribution="OSGiExtender-1.0-SNAPSHOT.nbm" downloadsize="3816" license="AF77BD25" needsrestart="false" releasedate="2017/04/23" targetcluster="asteroidsmodules">
-    <manifest OpenIDE-Module="kevan14.OSGiExtender" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170423" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.eclipse.osgi.services &gt; 3.2.100, org.eclipse.equinox.ds &gt; 1.4.400, org.eclipse.equinox.util &gt; 1.0.500, kevan14.OSGICollisionDS &gt; 1.0.0, kevan14.OSGiBossContext &gt; 1.0.0" OpenIDE-Module-Name="OSGiExtender" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
+<module codenamebase="kevan14.OSGiExtender" distribution="OSGiExtender-1.0-SNAPSHOT.nbm" downloadsize="4424" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.OSGiExtender" OpenIDE-Module-Display-Category="kevan14" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="&lt;undefined&gt;" OpenIDE-Module-Module-Dependencies="org.eclipse.osgi.services &gt; 3.2.100, org.eclipse.equinox.ds &gt; 1.4.400, org.eclipse.equinox.util &gt; 1.0.500, kevan14.OSGICollisionDS &gt; 1.0.0, kevan14.OSGiBossContext &gt; 1.0.0" OpenIDE-Module-Name="OSGiExtender" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="&lt;undefined&gt;" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
@@ -117,6 +117,11 @@
 
 <module autoload="true" codenamebase="org.netbeans.api.progress.nb" distribution="org-netbeans-api-progress-nb-RELEASE82.nbm" downloadsize="87670" homepage="http://www.netbeans.org/" license="14E6055" moduleauthor="" needsrestart="false" releasedate="2016/09/30" targetcluster="platform">
     <manifest AutoUpdate-Show-In-Client="false" OpenIDE-Module="org.netbeans.api.progress.nb" OpenIDE-Module-Display-Category="Infrastructure" OpenIDE-Module-Implementation-Version="201609300101" OpenIDE-Module-Java-Dependencies="Java &gt; 1.6" OpenIDE-Module-Long-Description="Swing specific progress visualization APIs." OpenIDE-Module-Module-Dependencies="org.openide.util.ui &gt; 9.3, org.openide.util &gt; 9.3, org.openide.util.lookup &gt; 8.0, org.openide.awt &gt; 6.2, org.netbeans.api.progress/1 &gt; 1.45" OpenIDE-Module-Name="Progress API - Swing" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Swing based task progress visualization APIs." OpenIDE-Module-Specification-Version="1.47.1"/>
+    
+</module>
+
+<module codenamebase="kevan14.SilentUpdate" distribution="SilentUpdate-1.0-SNAPSHOT.nbm" downloadsize="11828" license="AF77BD25" needsrestart="false" releasedate="2017/04/29" targetcluster="asteroidsmodules">
+    <manifest OpenIDE-Module="kevan14.SilentUpdate" OpenIDE-Module-Display-Category="Infrastructure" OpenIDE-Module-Implementation-Version="1.0-20170429" OpenIDE-Module-Long-Description="A service installing updates of your NetBeansv Platform Application with as few as possible user's interactions." OpenIDE-Module-Module-Dependencies="org.netbeans.api.annotations.common/1 &gt; 1.27.1, org.openide.modules &gt; 7.48.1, org.netbeans.modules.autoupdate.services &gt; 1.52.1, org.openide.io &gt; 1.49.1, org.openide.util &gt; 9.7.1" OpenIDE-Module-Name="Silent Update" OpenIDE-Module-Requires="org.openide.modules.ModuleFormat1" OpenIDE-Module-Short-Description="Silent Update of Application" OpenIDE-Module-Specification-Version="1.0"/>
     
 </module>
 
